@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Pedidos</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color:grey">
+
+  <ion-list>
+    <ion-item-sliding *ngFor="let pedido of pedidos | async">
+      <ion-item>
+        <h3>{{ pedido.pratos }}</h3>
+      </ion-item>
+      <ion-item-options side="left">
+        <button ion-button color="secondary" (click)="fazerPedido(pedido)"><ion-icon name="create"></ion-icon>Pedir</button>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>

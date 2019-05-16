@@ -1,0 +1,39 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Fazer pedido</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <form [formGroup]="form" >  
+    <h3 text-center>Selecione seu quarto.</h3>
+    <h4>{{prato}}</h4>
+    <ion-list>
+      <ion-item>
+        <ion-label>Quartos</ion-label>
+        <ion-select formControlName="quarto">
+          <ion-option value="001">001</ion-option>
+          <ion-option value="002">002</ion-option>
+          <ion-option value="003">003</ion-option>
+          <ion-option value="004">004</ion-option>
+          <ion-option value="005">005</ion-option>
+          <ion-option value="006">006</ion-option>
+          <ion-option value="007">007</ion-option>
+          <ion-option value="008">008</ion-option>
+          <ion-option value="009">009</ion-option>
+          <ion-option value="010">010</ion-option>
+          <ion-option value="011">011</ion-option>
+          <ion-option value="012">012</ion-option>
+          <ion-option value="013">013</ion-option>
+          <ion-option value="014">014</ion-option>
+          <ion-option value="015">015</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-list>
+  </form>
+  <button ion-button block (click)="enviarPedido()">Fazer Pedido</button>
+</ion-content>
+
+
