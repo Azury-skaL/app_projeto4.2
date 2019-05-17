@@ -13,6 +13,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { PedidosProvider } from '../providers/pedidos/pedidos';
 import { ToastProvider } from '../providers/toast/toast';
+import { AutenticaProvider } from '../providers/autentica/autentica';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ToastProvider } from '../providers/toast/toast';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     PedidosProvider,
-    ToastProvider
+    ToastProvider,
+    AutenticaProvider
   ]
 })
 export class AppModule {}

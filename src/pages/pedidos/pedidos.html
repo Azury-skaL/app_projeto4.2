@@ -1,12 +1,12 @@
 <ion-header>
-  <ion-navbar color="primary">
+  <ion-navbar color="dark">
     <ion-title>Pedidos</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding style="background-color:grey">
 
-  <ion-list>
+  <ion-list class="nigger">
     <ion-item-sliding *ngFor="let pedido of pedidos | async">
       <ion-item>
         <h3>{{ pedido.pratos }}</h3>
